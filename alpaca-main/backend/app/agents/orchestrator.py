@@ -260,7 +260,7 @@ class AgentOrchestrator:
         if not self.autonomous_active:
             return {"auto_executed": False, "reason": "Autonomous trading disabled."}
 
-        symbols_to_scan = ["NVDA", "AAPL", "MSFT", "SPY", "TSLA", "AMD", "QQQ"]
+        symbols_to_scan = ["NVDA", "AAPL", "MSFT", "SPY", "TSLA", "AMD", "QQQ", "BTC/USD"]
         symbol = random.choice(symbols_to_scan)
         
         regime = market_intel_agent.analyze_market_regime("SPY")
