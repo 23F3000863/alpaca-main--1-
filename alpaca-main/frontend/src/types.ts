@@ -175,6 +175,7 @@ export interface Position {
     support_level: number;
     resistance_level: number;
     rationale: string;
+    regime?: string;
     target_gain_pct?: number;
     risk_distance_pct?: number;
   };
